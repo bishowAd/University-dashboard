@@ -12,6 +12,9 @@ app.use(cors({ origin: "http://localhost:5173" }));
 // Routes
 app.use("/api/auth", require("./routes/auth"));
 
+// Data
+app.use("/api/data", require("./routes/data"));
+
 // Test route — just to confirm the server works
 app.get("/", (req, res) => {
   res.json({ message: "Server is running!" });
