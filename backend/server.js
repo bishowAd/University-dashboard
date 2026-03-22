@@ -13,7 +13,7 @@ app.use(cors({ origin: "http://localhost:5173" }));
 app.use("/api/auth", require("./routes/auth"));
 
 // Data
-app.use("/api/data", require("./routes/data"));
+app.use("/api/data", require("./routes/routes"));
 
 // Test route — just to confirm the server works
 app.get("/", (req, res) => {
